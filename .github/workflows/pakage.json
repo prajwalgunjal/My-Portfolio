@@ -1,0 +1,11 @@
+{
+    "name": "my-portfolio",
+    "version": "1.0.0",
+    "description": "My Portfolio Website",
+    "main": "index.html",
+    "scripts": {},
+    "homepage": "https://<prajwalgunjal>.github.io/<My-Portfolio>",
+    "author": "Prajwal GUnjal",
+    "license": "MIT"
+  }
+  
