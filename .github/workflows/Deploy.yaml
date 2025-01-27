@@ -8,18 +8,16 @@ on:
 permissions:
   contents: write
 
-
 jobs:
   build_and_deploy:
-    runs-on: ubuntu-latest
-
+    runs-on: ubuntu-22.04  # Explicit version to avoid ubuntu-latest transition warnings
 
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v3
 
       - name: Deploy to GitHub Pages
-        uses: JamesIves/github-pages-deploy-action@4.1.0
+        uses: JamesIves/github-pages-deploy-action@v4
         with:
-          branch: gh-pages  # Assuming you want to deploy to the gh-pages branch
-          folder: .
+          branch: gh-pages  # Deployment branch
+          folder: .         # Folder containing static files
